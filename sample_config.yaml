@@ -1,0 +1,17 @@
+watch_paths:
+- ./watched
+exclude_paths:
+- /proc
+- /sys
+- /tmp
+hash_algorithm: sha256
+risk_weights:
+type: 0.30
+operation: 0.35
+frequency: 0.20
+path: 0.15
+cloud_upload:
+enabled: false
+provider: azure_blob
+logging:
+level: INFO
